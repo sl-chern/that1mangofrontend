@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+    .team-page__info-block-horizontal {
+        @apply flex flex-row w-4/5 mx-auto
+    }
+
+    .team-page-vertical {
+        @apply flex flex-col w-full rounded overflow-hidden mt-4
+    }
+
+    .team-page__picture-block-person {
+        @apply w-1/5 rounded overflow-hidden
+    }
+
+    .team-page__alt-name-block {
+        @apply flex flex-row
+    }
+
+    .team-page__alt-name {
+        @apply text-xl font-openSans text-dark-400 dark:text-light-400 mr-5
+    }
+}

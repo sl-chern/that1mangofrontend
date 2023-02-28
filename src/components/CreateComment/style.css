@@ -1,0 +1,52 @@
+@tailwind components;
+
+@layer components {
+    .comment__textarea {
+        @apply resize-none w-full min-h-[100px] text-base h-max
+    }
+
+    .comment__textarea::-webkit-scrollbar {
+        @apply w-[3px]
+    }
+    
+    .comment__textarea::-webkit-scrollbar-track {
+        @apply bg-light-300 dark:bg-dark-200
+    }
+    
+    .comment__textarea::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .comment__textarea::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+
+    .create-comment {
+        @apply w-full flex flex-col
+    }
+
+    .create-comment__options {
+        @apply w-full mt-1 flex flex-row items-center justify-between
+    }
+    
+    .create-comment__count-text {
+        @apply text-dark-200 dark:text-light-300 text-base font-roboto
+    }
+
+    .create-comment__buttons {
+        @apply flex flex-row
+    }
+
+    .create-comment__buttons button {
+        @apply ml-2
+    }
+
+    .create-comment__buttons .text {
+        @apply text-base
+    }
+
+    .create-comment__buttons .text-outline {
+        @apply text-base
+    }
+    
+}

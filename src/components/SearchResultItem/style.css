@@ -1,0 +1,42 @@
+@tailwind components;
+
+@layer components {
+    .search-result-item {
+        @apply w-full mb-2 flex flex-row items-center p-3
+        dark:bg-dark-300 bg-light-500 rounded
+        hover:cursor-pointer hover:bg-light-400 dark:hover:bg-dark-400
+    }
+
+    .search-result-item__picture-block {
+        @apply w-[80px] relative h-[80px]
+    }
+
+    .search-result-item__picture {
+        @apply h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-sm
+    }
+
+    .search-result-item__name-block {
+        @apply w-[calc(100%-92px)] ml-3 relative overflow-hidden
+    }
+
+    .search-result-item__name {
+        @apply font-roboto text-xl text-dark-200 dark:text-light-300 w-max
+    }
+
+    .search-result-item__dark-effect {
+        @apply h-full absolute top-0 right-0 w-7 bg-gradient-to-r from-transparent to-light-500
+        dark:to-dark-300 group-hover:to-light-400 dark:group-hover:to-dark-400
+    }
+
+    .search-result-item__info-block {
+        @apply flex flex-col w-full
+    }
+
+    .search-result-item__rating-block {
+        @apply flex flex-row items-center ml-3
+    }
+
+    .popular-title__type {
+        @apply font-roboto text-base text-dark-500 dark:text-light-500 w-max mr-5
+    }
+}

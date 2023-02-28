@@ -1,0 +1,40 @@
+@tailwind components;
+
+@layer components {
+    .chapters {
+        @apply w-full max-h-min flex flex-col items-center justify-center
+    }
+
+    .cahapters__text-container {
+        @apply w-2/3 py-5
+    }
+
+    .chapters__text {
+        @apply text-center
+    }
+
+    .default-text {
+        @apply dark:text-light-300 text-dark-200 text-base font-openSans
+    }
+
+    .chapters__teams-block {
+        @apply flex flex-row flex-wrap w-full p-4
+    }
+
+    .chapters__content-block {
+        @apply flex flex-col w-full p-4
+    }
+
+    .chapters__chapters-content {
+        @apply w-full flex flex-col
+    }
+
+    .chapters__sort-button {
+        @apply py-1 px-3 border-2 rounded border-dark-200 dark:border-light-300 hover:cursor-pointer
+        hover:bg-light-400 dark:hover:bg-dark-400 bg-transparent
+    }
+
+    .chapters__sort-block {
+        @apply w-full p-4
+    }
+}

@@ -1,0 +1,66 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .user-list-item-container {
+        @apply relative w-full mb-2 
+    }
+
+    .user-list-item {
+        @apply flex flex-row h-[56px] items-center p-2 rounded border-[1px] pr-[24%]
+        border-dark-200 dark:border-light-300 hover:cursor-pointer justify-between
+        hover:bg-light-400 dark:hover:bg-dark-400
+    }
+
+    .user-list-item:hover .user-list-item__name-dark-effect {
+        @apply to-light-400 dark:to-dark-400
+    }
+
+    .user-list-item__main-info {
+        @apply flex flex-row items-center w-1/2
+    }
+
+    .user-list-item__status {
+        @apply w-5 h-5 relative flex justify-center
+    }
+
+    .user-list-item__poster-block {
+        @apply h-full w-[30px] ml-2 flex justify-center overflow-hidden rounded-sm
+    }
+
+    .user-list-item__poster {
+        @apply h-full w-auto rounded-sm overflow-hidden 
+    }
+
+    .user-list-item__name-block {
+        @apply w-[85%] ml-2 overflow-hidden relative
+    }
+
+    .user-list-item__name-dark-effect {
+        @apply absolute top-0 right-0 h-full bg-gradient-to-r from-transparent to-light-200 dark:to-dark-100 w-5
+    }
+
+    .user-list-item__name {
+        @apply w-max
+    }
+
+    .user-list-item__type {
+        @apply ml-2 w-16 text-xl font-oswald dark:text-light-400 text-dark-400
+    }
+
+    .user-list-item__date {
+        @apply  ml-4 w-16 text-base font-oswald dark:text-light-300 text-dark-200
+    }
+
+    .user-list-item__select-container {
+        @apply w-1/5 absolute right-2 top-2
+    }
+
+    .user-list-item__mark-block {
+        @apply w-12 flex items-center flex-row ml-1
+    }
+
+    .user-list-item__mark {
+        @apply text-base font-oswald dark:text-light-300 text-dark-200
+    }
+}

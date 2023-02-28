@@ -1,0 +1,40 @@
+@tailwind components;
+
+@layer components {
+    .popular-title {
+        @apply w-full mb-1 flex flex-row p-2 h-[120px] bg-light-300 dark:bg-dark-200
+        hover:bg-light-500 dark:hover:bg-dark-500 rounded hover:cursor-pointer items-center
+    }
+
+    .popular-title__poster-block {
+        @apply h-full w-[70px] relative rounded-sm overflow-hidden
+    }
+
+    .popular-tile__poster {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+    }
+
+    .popular-title__info-block {
+        @apply flex flex-col ml-2 grow
+    }
+
+    .popular-title__name-block {
+        @apply relative overflow-hidden flex
+    }
+
+    .popular-title__name {
+        @apply text-base font-oswald text-dark-200 dark:text-light-300 font-medium
+    }
+
+    .popular-title__type {
+        @apply text-base font-roboto text-dark-400 dark:text-light-400
+    }
+
+    .popular-title__mark-blcok {
+        @apply flex flex-row items-center
+    }
+
+    .popular-title__mark {
+        @apply text-lg font-oswald text-dark-200 dark:text-light-300 ml-1
+    }
+}

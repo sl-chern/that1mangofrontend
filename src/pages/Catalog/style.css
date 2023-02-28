@@ -1,0 +1,99 @@
+@tailwind components;
+
+@layer components {
+    .catalogSection {
+        @apply w-full mt-4 h-auto flex flex-row justify-between
+    }
+
+    .mangaSection {
+        @apply w-3/4 p-2 flex flex-col
+    }
+
+    .mangaSearchHead {
+        @apply w-full flex flex-row justify-between
+    }
+
+    .sortBlock {
+        @apply flex flex-row items-center
+    }
+
+    .switchSortButton {
+        @apply h-10 rounded w-10 ml-2 border-[1px] border-solid border-dark-200 dark:border-light-300 
+        flex justify-center items-center hover:cursor-pointer select-none
+        hover:bg-light-400 dark:hover:bg-dark-400
+    }
+
+    .searchInputBlock {
+        @apply w-3/5 flex flex-row justify-between
+    }
+
+    .catalogSection .formGroup {
+        @apply mt-0 h-10
+    }
+
+    .catalogSection .formInput {
+        @apply py-1 border-[1px] h-10
+    }
+
+    .catalogSection .formLabel {
+        @apply bg-light-200 dark:bg-dark-100
+    }
+
+    .catalogSection button {
+        @apply ml-2
+    }
+
+    .catalogSection form {
+        @apply flex flex-row justify-between w-full
+    }
+
+    .filtresBlock {
+        @apply flex flex-col ml-2 bg-light-300 dark:bg-dark-200 rounded sticky top-2 max-h-[calc(100vh-160px)] h-max
+        overflow-x-hidden w-1/4
+    }
+
+    .filtresContent {
+        @apply flex flex-col w-full overflow-x-hidden
+    }
+
+    .keywordShowButton {
+        @apply w-full dark:hover:bg-dark-400 hover:bg-light-400 hover:cursor-pointer flex px-3 py-[6px]
+        flex-row justify-between items-center
+    }
+
+    .keywordShowButtonText {
+        @apply font-openSans text-lg dark:text-light-300 text-dark-200 font-medium
+    }
+
+    .filtresContent::-webkit-scrollbar {
+        @apply w-[7px]
+    }
+    
+    .filtresContent::-webkit-scrollbar-track {
+        @apply bg-light-300 dark:bg-dark-200
+    }
+    
+    .filtresContent::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .filtresContent::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+
+    .filtersButtonsBlock {
+        @apply flex px-3 py-[6px] flex-row justify-between mb-2
+    }
+
+    .mangaList {
+        @apply flex flex-row flex-wrap mt-4
+    }
+
+    .mangaListBlock {
+        @apply flex flex-col w-full
+    }
+
+    .spinnerBlock {
+        @apply w-full flex justify-center items-center
+    }
+}

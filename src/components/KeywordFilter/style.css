@@ -1,0 +1,46 @@
+@tailwind components;
+
+@layer components {
+
+    .keywordFilterBlock {
+        @apply h-full flex flex-col transition-transform duration-150 absolute 
+        p-3 bg-light-300 dark:bg-dark-200 w-full z-50 overflow-y-scroll translate-x-[140%]
+    }
+
+    .keywordFilterBlock::-webkit-scrollbar {
+        @apply w-[7px]
+    }
+    
+    .keywordFilterBlock::-webkit-scrollbar-track {
+        @apply bg-light-300 dark:bg-dark-200
+    }
+    
+    .keywordFilterBlock::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .keywordFilterBlock::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+
+    .keywordTitle {
+        @apply flex flex-row items-center w-full justify-between
+    }
+
+    .backButton {
+        @apply flex flex-row items-center hover:cursor-pointer pr-1 py-1
+        hover:bg-light-400 dark:hover:bg-dark-400 rounded w-min
+    }
+
+    .backButton > .personsTitleText {
+        @apply m-0
+    }
+
+    .keywordCheckboxesBlock {
+        @apply flex flex-col mt-4
+    }
+
+    .hiddenInOverflow {
+        @apply translate-x-[0]
+    }
+}

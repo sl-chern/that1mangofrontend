@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+    .keywordBlock {
+        @apply mx-2 mt-4 w-full flex flex-col
+    }
+
+    .keywordBlockTitle {
+        @apply font-openSans text-2xl dark:text-light-300 text-dark-200 font-semibold
+    }
+
+    .keywords {
+        @apply w-full flex flex-row flex-wrap mt-2
+    }
+
+    .keyword {
+        @apply p-1 mr-1 rounded bg-dark-200 dark:bg-light-300 cursor-pointer mt-1
+    }
+
+    .keywordTitle {
+        @apply font-roboto text-base text-light-300 dark:text-dark-200
+    }
+}

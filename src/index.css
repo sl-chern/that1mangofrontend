@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    * {
+        @apply m-0 p-0 box-border
+    }
+
+    .icon {
+        @apply dark:text-white text-black
+    }
+
+    .icon-inverted {
+        @apply text-white dark:text-black
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        @apply hidden
+    }
+}
+
+@layer utilities {
+    body::-webkit-scrollbar {
+        @apply w-[10px]
+    }
+    
+    body::-webkit-scrollbar-track {
+        @apply bg-light-300
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200
+    }
+    
+    body::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400
+    }
+
+    .dark::-webkit-scrollbar-thumb {
+        @apply bg-light-300
+    }
+
+    .dark::-webkit-scrollbar-track {
+        @apply bg-dark-200
+    }
+
+    .dark::-webkit-scrollbar-thumb:hover {
+        @apply bg-light-400
+    }
+}

@@ -1,0 +1,99 @@
+@tailwind components;
+
+@layer components {
+    .team-page {
+        @apply flex flex-row w-full rounded overflow-hidden mt-4
+    }
+
+    .team-page__title-block {
+        @apply flex flex-row items-center justify-between w-full
+    }
+
+    .team-page__info-block {
+        @apply flex flex-col h-min w-1/5
+    }
+
+    .team-page__more-info-block {
+        @apply flex flex-col h-min ml-4 w-4/5
+    }
+
+    .team-page__picture-block {
+        @apply w-full rounded overflow-hidden
+    }
+
+    .team-page__picture {
+        @apply w-full
+    }
+
+    .team-page__info-content {
+        @apply flex grow flex-col ml-4 rounded pt-10 pl-10
+    }
+
+    .team-page__title {
+        @apply text-3xl font-openSans font-bold text-dark-200 dark:text-light-300
+    }
+
+    .team-page__stats-block {
+        @apply mt-4 w-full flex flex-row
+    }
+
+    .stats-content {
+        @apply rounded flex flex-col mr-6 
+    }
+
+    .stats-content__stat-value {
+        @apply text-xl font-oswald font-bold text-dark-200 dark:text-light-300
+    }
+
+    .stats-content__stat-type {
+        @apply text-sm font-roboto text-dark-400 dark:text-light-400 
+    }
+
+    .team-page__description-block {
+        @apply mt-4 w-full
+    }
+
+    .team-page__participants {
+        @apply flex flex-col items-center
+    }
+    
+    .team-page__participants button {
+        @apply w-max
+    }
+
+    .team-page__participants-block {
+        @apply w-full mt-4 flex flex-col
+    }
+
+    .team-page__participants-title {
+        @apply ml-4 mb-2
+    }
+
+    .team-page__participants-title-text {
+        @apply text-2xl font-roboto font-bold text-dark-200 dark:text-light-300
+    }
+
+    .team-page__titles-block {
+        @apply mt-5 flex flex-col w-full
+    }
+
+    .team-page__titles-header {
+        @apply flex flex-row justify-between items-center
+    }
+
+    .team-page__titles-title-block {
+        @apply ml-10
+    }
+
+    .team-page__titles-title {
+        @apply text-3xl font-roboto font-bold text-dark-200 dark:text-light-300
+    }
+
+    .team-page__title-block button {
+        @apply w-[110px] justify-center
+    }
+
+    .team-page__title-block .loaderBlock {
+        @apply w-[110px] border-2 border-transparent mx-[2px]
+    }
+}

@@ -1,0 +1,76 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .mangaInfoContent {
+        @apply w-full bg-light-300 dark:bg-dark-200 rounded overflow-hidden mt-4
+    }
+
+    .mangaDescription {
+        @apply font-roboto text-base dark:text-light-300 text-dark-200 leading-tight mx-2
+    }
+
+    .mangaDescriptionBlockOverflow {
+        @apply h-32 overflow-hidden relative flex flex-col transition-all duration-150
+    }
+
+    .darkEffect {
+        @apply absolute bottom-0 h-20 w-full bg-gradient-to-t dark:from-dark-200 to-transparent from-light-300
+        transition-all duration-150
+    }
+
+    .mangaDescriptionBlock {
+        @apply flex flex-col items-center
+    }
+
+    .descriptionButton {
+        @apply hover:cursor-pointer
+    }
+
+    .descriptionButton p {
+        @apply font-oswald text-base dark:text-light-300 text-dark-200 
+    }
+
+    .usersMarksAmountBlock {
+        @apply h-[300px] w-full mt-2 flex-row flex justify-between mb-4
+    }
+
+    .marksColumn {
+        @apply h-full flex flex-col w-[9%]
+    }
+
+    .amountStats {
+        @apply flex flex-col
+    }
+
+    .usersMarksAmount {
+        @apply p-[2px] flex justify-center items-center
+    }
+
+    .amountStat {
+        @apply font-oswald text-base dark:text-light-300 text-dark-200
+    }
+
+    .statMarkBlock {
+        @apply p-[2px] flex justify-center items-center
+    }
+
+    .bar {
+        @apply flex grow w-[30px] rounded overflow-hidden 
+        self-center relative justify-center items-center
+    }
+
+    .barValue {
+        @apply absolute bottom-0 w-full rounded
+    }
+}
+
+@layer utilities {
+    .fullDesc {
+        @apply h-max
+    }
+
+    .fDesc {
+        @apply h-0
+    }
+}

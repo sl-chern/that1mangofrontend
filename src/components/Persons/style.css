@@ -1,0 +1,37 @@
+@tailwind components;
+
+@layer components {
+    .personsBlock {
+        @apply flex flex-col w-full
+    }
+
+    .personsTitleText {
+        @apply font-openSans text-2xl dark:text-light-300 text-dark-200 font-semibold mb-2
+    }
+    
+    .personBlock {
+        @apply mb-2 flex flex-row w-full rounded bg-light-300 dark:bg-dark-200 items-center h-[100px] p-[10px]
+        hover:cursor-pointer dark:hover:bg-dark-400 hover:bg-light-400
+    }
+
+    .personImgBlock {
+        @apply h-[80px] w-[80px] flex justify-center overflow-hidden
+    }
+
+    .personImg {
+        @apply h-full w-auto rounded-sm overflow-hidden
+    }
+
+    .personNameBlock {
+        @apply ml-4 w-[calc(100%-100px)] overflow-hidden relative
+    }
+
+    .personName {
+        @apply font-roboto text-xl dark:text-light-300 text-dark-200
+    }
+
+    .personNameBlock__darkEffect {
+        @apply absolute right-0 top-0 h-full w-4 bg-gradient-to-r from-transparent dark:to-dark-200 to-light-300
+        dark:group-hover:to-dark-400 group-hover:to-light-400
+    }
+}

@@ -1,0 +1,167 @@
+@tailwind components;
+
+@layer components {
+    .manga {
+        @apply flex flex-row justify-between w-full mt-4 relative
+    }
+
+    .mangaSidebar {
+        @apply flex flex-col w-1/5 rounded h-min
+    }
+
+    .mangaPoster {
+        @apply rounded overflow-hidden relative
+    }
+
+    .manga__option-buttons {
+        @apply flex flex-col left-1 absolute top-0
+    }
+
+    .subscribe-button-block {
+        @apply z-20 mt-1 w-[34px] h-[34px] relative
+    }
+
+    .subscribe-button-block__button {
+        @apply p-1 bg-light-300 dark:bg-dark-200 rounded z-50 relative hover:cursor-pointer
+        hover:bg-light-400 dark:hover:bg-dark-400 w-[34px] h-[34px]
+    }
+
+
+    .subscribe-button-block__button:hover + .subscribe-button-block__description-container > .subscribe-button-block__description-block {
+        @apply left-8
+    }
+
+    .subscribe-button-block__link:hover + .subscribe-button-block__description-container > .subscribe-button-block__description-block {
+        @apply left-8
+    }
+
+    .subscribe-button-block__description-block {
+        @apply absolute top-[1px] -left-40 w-max p-1 flex items-center bg-dark-200 dark:bg-light-300 rounded-r 
+        hover:left-8 transition-all duration-200
+    }
+
+    .subscribe-button-block__description-container {
+        @apply absolute h-[34px] top-0 left-0 w-96 overflow-hidden rounded-md
+    }
+
+    .subscribe-button-block__description {
+        @apply text-base font-oswald text-light-300 dark:text-dark-200
+    }
+
+    .mangaButtons {
+        @apply mt-4 flex flex-col
+    }
+
+    .readButton {
+        @apply h-10 px-3 flex items-center justify-center rounded border-2 border-solid
+        border-dark-300 !bg-dark-300 hover:bg-dark-100
+        dark:border-light-300 dark:!bg-light-300 dark:hover:!bg-light-400 dark:hover:!border-light-400
+        hover:cursor-pointer transition-colors ease-linear select-none mb-4
+    }
+
+    .readButtonText {
+        @apply font-roboto font-medium text-xl text-light-200 dark:text-dark-200
+    }
+
+    .mangaInfo {
+        @apply rounded bg-light-300 dark:bg-dark-300 w-full mt-4 flex flex-col overflow-hidden
+    }
+
+    .infoBlock {
+        @apply py-1 px-2 w-full dark:hover:bg-dark-200 hover:bg-light-200 hover:cursor-pointer flex flex-col
+        border-b-2 dark:border-b-dark-200 border-b-light-200
+    }
+
+    .infoType {
+        @apply font-roboto font-medium text-sm dark:text-light-400 text-dark-400
+    }
+
+    .infoText {
+        @apply font-roboto font-medium text-xl dark:text-light-100 text-dark-200
+    }
+
+    .infoTextBlock {
+        @apply w-full flex flex-row
+    }
+
+    .infoTextArray {
+        @apply mr-2 flex flex-col items-center justify-center hover:cursor-pointer
+    }
+
+    .textHoverEffect {
+        @apply w-full bottom-[0] h-[1px] bg-dark-200 dark:bg-light-100 scale-0 transition-all duration-150 ease-linear group-hover:scale-100
+    }
+
+    .namesBlock {
+        @apply flex flex-col
+    }
+
+    .infoNamesBlock {
+        @apply py-1 px-2 w-full flex flex-col border-b-2 dark:border-b-dark-200 border-b-light-200
+    }
+
+    .nameText {
+        @apply font-roboto font-medium text-base dark:text-light-100 text-dark-200
+    }
+
+    .mangaContent {
+        @apply grow flex flex-col w-4/5
+    }
+
+    .mangaTitle {
+        @apply w-full flex flex-col justify-between
+    }
+
+    .titles {
+        @apply w-full flex flex-col px-4
+    }
+
+    .russianTitle {
+        @apply font-openSans text-4xl dark:text-light-300 text-dark-200 font-bold
+    }
+
+    .englishTitle {
+        @apply font-openSans text-2xl dark:text-light-300 text-dark-200 font-semibold
+    }
+
+    .ratingBlock {
+        @apply grow flex flex-row px-4 w-full items-center mt-3
+    }
+
+    .ratingButton {
+        @apply flex flex-row items-center w-min self-end hover:cursor-pointer p-1 rounded
+        border-[1px] border-solid border-dark-300 dark:border-light-300
+        dark:hover:bg-dark-400 hover:bg-light-300 transition-colors duration-150 mr-8
+    }
+
+    .rating {
+        @apply font-openSans text-2xl dark:text-light-300 text-dark-200 font-semibold ml-1
+    }
+
+    .amountBlock {
+        @apply flex flex-row items-center w-min self-end p-1 rounded mx-8 relative justify-center hover:cursor-default
+    }
+
+    .tip {
+        @apply py-1 px-2 bg-light-500 dark:bg-dark-300 absolute top-12 w-max rounded 
+        font-oswald text-base dark:text-light-300 text-dark-200 font-light scale-0
+        group-hover:scale-100 transition-all duration-100
+    }
+
+    .tipArrow {
+        @apply bg-light-500 dark:bg-dark-300 absolute w-3 h-3 rotate-45 top-11 scale-0 group-hover:scale-100
+        transition-all duration-100
+    }
+
+    .contentBlock {
+        @apply flex flex-row w-full mt-4
+    }
+
+    .mangaContentBlock {
+        @apply flex flex-col w-2/3 mx-4 bg-light-300 dark:bg-dark-200 rounded h-min
+    }
+
+    .mangaPersonBlock {
+        @apply flex flex-col w-[calc(33.3333%-2rem)]
+    }
+}

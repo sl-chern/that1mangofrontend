@@ -1,0 +1,36 @@
+@tailwind components;
+
+@layer components {
+    .participant {
+        @apply flex flex-row min-h-[96px] w-full rounded bg-light-300 dark:bg-dark-200 mb-4 items-center px-3 py-1
+        hover:cursor-pointer hover:bg-light-400 dark:hover:bg-dark-400 
+    }
+
+    .participant__picture-block {
+        @apply h-20 rounded-full overflow-hidden flex items-center justify-center
+    }
+
+    .participant__picture {
+        @apply h-full
+    }
+
+    .participant__info {
+        @apply flex flex-col ml-3 w-[128px]
+    }
+
+    .participant__name {
+        @apply font-oswald text-base text-dark-200 dark:text-light-300
+    }
+
+    .participant__roles-block {
+        @apply flex flex-row flex-wrap
+    }
+
+    .participant__role {
+        @apply mr-2
+    }
+
+    .participant__role-name {
+        @apply font-roboto text-sm text-dark-400 dark:text-light-400
+    }
+}

@@ -1,0 +1,55 @@
+@tailwind components;
+
+@layer components {
+    .user-settings__team-settings-type-block {
+        @apply w-4/5 flex flex-row justify-between mt-4 mx-auto
+    }
+
+    .settings-type {
+        @apply flex flex-col items-center hover:cursor-pointer
+    }
+
+    .user-settings__team-settings-type-block .settings-type__text {
+        @apply font-roboto text-base
+    }
+
+    .participants-settings {
+        @apply flex flex-col mt-4 w-[90%] mx-auto max-h-[60vh] overflow-y-scroll
+    }
+
+    .participants-settings::-webkit-scrollbar {
+        @apply w-[4px]
+    }
+    
+    .participants-settings::-webkit-scrollbar-track {
+        @apply bg-light-300 dark:bg-dark-200
+    }
+    
+    .participants-settings::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .participants-settings::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+
+    .participants-settings .participant__info {
+        @apply w-[65%]
+    }
+
+    .part-update__part-info {
+        @apply w-[90%] mx-auto flex flex-row p-2 justify-center
+    }
+
+    .part-update__img-block {
+        @apply w-1/4 rounded-full overflow-hidden 
+    }
+
+    .part-update__img {
+        @apply w-full h-auto
+    }
+
+    .part-update__name {
+        @apply text-xl font-oswald 
+    }
+}

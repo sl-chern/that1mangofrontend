@@ -1,0 +1,56 @@
+@tailwind components;
+
+@layer components {
+    .manga-chapter {
+        @apply w-full h-min relative flex items-center mb-2
+    }
+
+    .manga-chapter__link {
+        @apply w-full h-full
+    }
+
+    .manga-chapter__content {
+        @apply w-full rounded flex flex-row items-center border-[1px] justify-between
+        dark:border-light-300 border-dark-200 p-2 hover:cursor-pointer pr-[9rem]
+        hover:bg-light-400 dark:hover:bg-dark-400
+    }
+
+    .manga-chapter__info {
+        @apply w-[30%]
+    }
+
+    .manga-chapter__title-block {
+        @apply w-1/2 relative overflow-hidden
+    }
+
+    .manga-chapter__title-dark {
+        @apply w-5 absolute top-0 right-0 h-full bg-gradient-to-r from-transparent dark:to-dark-200 dark:group-hover:to-dark-400
+        to-light-300 group-hover:to-light-400
+    }
+
+    .manga-chapter__title {
+        @apply w-max
+    }
+
+    .manga-chapter__chapter-buttons {
+        @apply flex flex-row items-center absolute left-[80%] justify-end w-[18%]
+    }
+
+    .manga-chapter__chapter-button {
+        @apply mr-[2px] flex flex-row items-center p-2 rounded
+        hover:cursor-pointer hover:bg-light-400 dark:hover:bg-dark-400
+    }
+    
+    .manga-chapter__like {
+        @apply flex flex-row items-center p-1 rounded
+        hover:cursor-pointer hover:bg-light-400 dark:hover:bg-dark-400
+    }
+
+    .manga-chapter__like_button {
+        @apply mr-[2px]
+    }
+
+    .manga-chapter__like-content {
+        @apply flex flex-row items-center
+    }
+}

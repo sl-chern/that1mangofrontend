@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+    .comments-block {
+        @apply flex flex-col p-4
+    }
+
+    .comments-block__comments-content {
+        @apply flex flex-col mt-3
+    }
+
+    .comments-block__header {
+        @apply flex flex-row
+    }
+
+    .comments-block__comments {
+        @apply flex flex-col mt-4
+    }
+}

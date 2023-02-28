@@ -1,0 +1,106 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .user__lists {
+        @apply w-full mt-8 flex flex-row
+    }
+
+    .user__lists-container {
+        @apply w-1/5 flex flex-col items-center
+    }
+
+    .user__lists-title-block {
+        @apply flex flex-row justify-between w-full
+    }
+
+    .user__lists-title {
+        @apply text-2xl font-openSans font-semibold text-dark-200 dark:text-light-300 mb-4
+    }
+
+    .user__tab-titles {
+        @apply flex flex-col w-full
+    }
+
+    .tab-title {
+        @apply p-2 dark:bg-dark-200 bg-light-300 rounded mb-2 flex items-center
+    }
+
+    .tab-title__text-container {
+        @apply w-[90%] overflow-hidden relative hover:cursor-pointer 
+    }
+
+    .tab-title__text {
+        @apply text-xl font-medium text-dark-200 dark:text-light-300 font-roboto w-max
+    }
+
+    .tab-title__gradient {
+        @apply h-full absolute top-0 right-0 w-5 bg-gradient-to-r from-transparent dark:to-dark-200 to-light-300
+    }
+    
+    .user__lists-titles-block {
+        @apply flex flex-col w-4/5 pl-4
+    }
+
+    .user___lists-buttons {
+        @apply flex flex-row h-10 w-full justify-between
+    }
+
+    .user___lists-buttons-block > button {
+        @apply w-max mr-3
+    }
+
+    .user___lists-buttons-block {
+        @apply flex flex-row
+    }
+
+    .user__lists-titles {
+        @apply mt-4 flex flex-col w-full
+    }
+
+    .user__create-default-block {
+        @apply w-full flex items-center justify-center mt-6
+    }
+
+    .tab-title__count-block {
+        @apply w-[10%] h-full flex items-center
+    }
+
+    .tab-title__count {
+        @apply text-lg font-oswald text-dark-400 dark:text-light-400
+    }
+}
+
+@layer utilities {
+    .tab-title_active {
+        @apply bg-dark-200 dark:bg-light-300
+    }
+
+    .tab-title_active .tab-title__count {
+        @apply dark:text-dark-400 text-light-400
+    }
+
+    .tab-title_active .tab-title__text {
+        @apply dark:text-dark-200 text-light-300
+    }
+
+    .tab-title_active .tab-title__gradient {
+        @apply to-dark-200 dark:to-light-300
+    }
+
+    .user__tab-titles::-webkit-scrollbar {
+        @apply w-[7px] h-[0px]
+    }
+    
+    .user__tab-titles::-webkit-scrollbar-track {
+        @apply bg-light-200 dark:bg-dark-100 rounded-full
+    }
+    
+    .user__tab-titles::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .user__tab-titles::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+}

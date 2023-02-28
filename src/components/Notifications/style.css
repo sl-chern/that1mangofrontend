@@ -1,0 +1,71 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .notificationsBlock {
+        @apply fixed top-20 right-2 z-[120] max-h-[76vh] overflow-y-scroll
+    }
+
+    .notificationsBlock::-webkit-scrollbar {
+        @apply w-[3px]
+    }
+    
+    .notificationsBlock::-webkit-scrollbar-track {
+        @apply bg-transparent 
+    }
+    
+    .notificationsBlock::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .notificationsBlock::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+
+    .notification {
+        @apply w-96 p-2 rounded mb-2 flex flex-row justify-between items-center
+    }
+
+    .notificationText {
+        @apply font-roboto text-base text-[#858585]
+    }
+
+    .closeNotificationButton {
+        @apply w-6 h-6 rounded flex items-center justify-center 
+        hover:cursor-pointer
+    }
+
+    .notificationTextBlock {
+        @apply flex flex-col ml-1
+    }
+
+    .notificationTitle {
+        @apply font-openSans font-semibold text-base 
+    }
+
+    .notificationContentBlock {
+        @apply flex flex-row items-center
+    }
+}
+
+@layer utilities {
+    .errorNot {
+        @apply bg-[#e5dada] dark:bg-[#171111]
+    }
+
+    .erTitle {
+        @apply text-[#9D3829]
+    }
+
+    .successNot {
+        @apply bg-[#dde5da] dark:bg-[#111711]
+    }
+
+    .scsTitle {
+        @apply text-[#299d2b]
+    }
+
+    .animationOp {
+        @apply animate-scale
+    }
+}

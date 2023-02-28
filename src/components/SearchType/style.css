@@ -1,0 +1,23 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .search-type-block {
+        @apply p-2 w-max bg-light-500 dark:bg-dark-300 rounded hover:cursor-pointer
+        hover:bg-light-400 dark:hover:bg-dark-500
+    }
+
+    .search-type-text {
+        @apply text-lg font-openSans text-dark-200 dark:text-light-300
+    }
+}
+
+@layer utilities {
+    .search-type-block_selected {
+        @apply dark:bg-light-300 bg-dark-200 dark:hover:bg-light-300 hover:bg-dark-200
+    }
+
+    .search-type-block_selected > .search-type-text {
+        @apply dark:text-dark-200 text-light-300
+    }
+}

@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .resetSpace {
+        @apply flex items-center justify-center grow bg-transparent
+    }
+
+    .resetContent {
+        @apply flex flex-col w-1/3 h-auto pb-10 bg-light-300 dark:bg-dark-200 absolute rounded pt-7
+    }
+
+    .resetContent label {
+        @apply bg-light-300
+    }
+}

@@ -1,0 +1,22 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .rangeFilter {
+        @apply flex flex-col px-3 py-[6px]
+    }
+
+    .filterInputsBlock {
+        @apply mt-3 flex flex-row justify-between
+    }
+    
+    .filterInputsBlock .formGroup {
+        @apply w-[48%]
+    }
+}
+
+@layer utilities {
+    .filterInputsBlock .formLabel {
+        @apply dark:bg-dark-200 bg-light-300
+    }
+}

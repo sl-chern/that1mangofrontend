@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+    .share__share-buttons {
+        @apply w-[290px] mx-auto mt-4 flex flex-row justify-between
+    }
+
+    .share__telegram-share {
+        @apply rounded bg-[#2AABEE] w-10 h-10 flex justify-center items-center
+    }
+
+    .share__reddit-share {
+        @apply rounded bg-[#ff6314] w-10 h-10 flex justify-center items-center
+    }
+
+    .share__twitter-share {
+        @apply rounded bg-[#1DA1F2] w-10 h-10 flex justify-center items-center
+    }
+
+    .share__viber-share {
+        @apply rounded bg-[#665CAC] w-10 h-10 flex justify-center items-center
+    }
+
+    .share__whatsapp-share {
+        @apply rounded bg-[#25D366] w-10 h-10 flex justify-center items-center
+    }
+
+    .share__facebook-share {
+        @apply rounded bg-[#3b5998] w-10 h-10 flex justify-center items-center
+    }
+}

@@ -1,0 +1,95 @@
+@tailwind components;
+
+@layer components {
+    .comment {
+        @apply flex flex-col transition-transform duration-100
+    }
+
+    .comment__comment-block {
+        @apply flex flex-row justify-between rounded bg-light-500 dark:bg-dark-300 overflow-hidden p-2 mb-1
+    }
+
+    .comment__user-picture-block {
+        @apply w-[6.5%] hover:cursor-pointer h-min
+    }
+
+    .comment__user-picture {
+        @apply rounded-full overflow-hidden
+    }
+
+    .comment__comment-content {
+        @apply w-[93.5%] pl-2 flex flex-col
+    }
+
+    .comment__comment-header {
+        @apply flex flex-row items-center w-full justify-between
+    }
+
+    .comment__comment-info {
+        @apply flex flex-row items-center
+    }
+
+    .comment__comment-buttons {
+        @apply flex flex-row
+    }
+
+    .comment__username {
+        @apply font-oswald text-base text-dark-200 dark:text-light-300 font-medium
+    }
+
+    .comment__info-block {
+        @apply mr-5
+    }
+
+    .comment__date {
+        @apply font-oswald text-sm text-dark-400 dark:text-light-400
+    }
+
+    .comment__text-block {
+        @apply mt-1 w-full
+    }
+
+    .comment__text {
+        @apply font-roboto text-dark-200 dark:text-light-300 text-base
+    }
+
+    .comment__deleted-text {
+        @apply font-oswald text-dark-400 dark:text-light-400 text-sm font-medium
+    }
+
+    .comment__options {
+        @apply flex flex-row mt-1
+    }
+
+    .comment__mark-block {
+        @apply flex flex-row
+    }
+
+    .comment__vote-button {
+        @apply mr-5 flex flex-row hover:cursor-pointer items-center
+    }
+
+    .comment__vote-count {
+        @apply ml-1 text-base text-dark-200 dark:text-light-300 font-oswald
+    }
+
+    .comment__replies-button {
+        @apply hover:cursor-pointer hover:bg-light-400 dark:hover:bg-dark-500 py-1 rounded px-2
+    }
+
+    .comment__button-text {
+        @apply text-base text-dark-200 dark:text-light-300 font-oswald
+    }
+
+    .comment-replies {
+        @apply flex flex-col pl-6
+    }
+
+    .comment__reply-button {
+        @apply flex flex-row hover:cursor-pointer hover:bg-light-400 dark:hover:bg-dark-500 py-1 rounded px-2 items-center
+    }
+
+    .comment__create-reply {
+        @apply flex pl-6 mb-1
+    }
+}

@@ -1,0 +1,68 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .user-settings__textarea {
+        @apply resize-none w-full h-48
+    }
+
+    .user-settings__textarea::-webkit-scrollbar {
+        @apply w-[4px]
+    }
+    
+    .user-settings__textarea::-webkit-scrollbar-track {
+        @apply bg-light-300 dark:bg-dark-200
+    }
+    
+    .user-settings__textarea::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .user-settings__textarea::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+
+    .user-settings__settings-type-block {
+        @apply w-4/5 flex flex-row justify-between mt-4 mx-auto
+    }
+
+    .settings-type {
+        @apply flex flex-col items-center hover:cursor-pointer
+    }
+
+    .user-settings__drag-and-drop-block {
+        @apply w-full mx-auto rounded border-2 border-dashed border-dark-200 dark:border-light-300 ml-1
+    }
+
+    .user-settings__drag-and-drop-label {
+        @apply w-full h-full flex items-center text-center justify-center p-1 hover:cursor-pointer
+    }
+
+    .user_settings__img-settings {
+        @apply w-full flex flex-row justify-between mt-4 
+    }
+
+    .user_settings__img-block {
+        @apply w-1/3 h-min rounded overflow-hidden relative hover:cursor-pointer 
+    }
+
+    .signInButtonBlock button {
+        @apply w-max
+    }
+
+    .user_settings__hover-effect {
+        @apply absolute top-0 left-0 w-full h-full dark:bg-dark-200 bg-light-300 opacity-0 group-hover:opacity-40 
+        transition-opacity duration-150 flex items-center justify-center
+    }
+
+    .user_settings__hover-effect-icon {
+        @apply z-10 group-hover:opacity-70 absolute top-[50%] left-[50%] opacity-0 transition-opacity duration-150
+        -translate-x-[50%] -translate-y-[50%]
+    }
+}
+
+@layer utilities {
+    .hoverEffect_active {
+        @apply scale-100
+    }
+}

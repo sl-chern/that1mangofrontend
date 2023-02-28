@@ -1,0 +1,59 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .manga-team {
+        @apply p-2 flex flex-row items-center rounded dark:bg-dark-300 bg-light-500 h-16
+        hover:cursor-pointer dark:hover:bg-dark-400 hover:bg-light-400 pr-12 w-[220px] mr-3
+    }
+
+    .manga-team__img-block {
+        @apply h-[46px] w-[46px] overflow-hidden flex justify-center
+    }
+
+    .manga-team__img {
+        @apply h-[46px] w-auto rounded-sm
+    }
+
+    .manga-team__name-block {
+        @apply ml-2 flex items-center w-[110px] overflow-hidden relative whitespace-nowrap
+    }
+
+    .manga-team__name-block-dark {
+        @apply absolute top-0 right-0 h-full w-3 bg-gradient-to-r from-transparent dark:to-dark-300 to-light-500
+        dark:group-hover:to-dark-400 group-hover:to-light-400 
+    }
+
+    .manga-team__subscription-button {
+        @apply h-9 w-9 flex items-center justify-center rounded
+        hover:cursor-pointer dark:hover:bg-dark-400 hover:bg-light-400
+        transition-colors duration-150 absolute right-5 select-none
+    }
+
+    .manga-team-container {
+        @apply relative w-min h-min flex items-center
+    }
+
+    .manga-team__name {
+        @apply !text-sm
+    }
+}
+
+@layer utilities {
+    .manga-team_active {
+        @apply bg-dark-300 dark:bg-light-500
+        hover:cursor-default dark:hover:bg-light-500 hover:bg-dark-300
+    }
+
+    .manga-team__name-block-dark_active {
+        @apply to-dark-300 dark:to-light-500 dark:group-hover:to-light-500 group-hover:to-dark-300
+    }
+
+    .default-text_inverted {
+        @apply text-light-300 dark:text-dark-200
+    }
+
+    .manga-team__subscription-button_active {
+        @apply hover:bg-dark-400 dark:hover:bg-light-400
+    }
+}

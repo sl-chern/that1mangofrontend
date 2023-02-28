@@ -1,0 +1,29 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .tabList {
+        @apply w-full flex flex-row justify-between overflow-hidden rounded-t
+    }
+
+    .tabTitle {
+        @apply w-1/3 flex justify-center items-center py-2 hover:cursor-pointer
+        hover:bg-light-500 dark:hover:bg-dark-400 h-full border-b-2 border-solid
+        dark:border-light-300 border-dark-200 
+    }
+
+    .tabTitleText {
+        @apply font-openSans text-xl dark:text-light-300 text-dark-200 font-semibold
+    }
+}
+
+@layer utilities {
+    .activeTab {
+        @apply dark:bg-light-300 bg-dark-200 
+        hover:dark:bg-light-300 hover:bg-dark-200 hover:cursor-default
+    }
+
+    .activeText {
+        @apply text-light-300 dark:text-dark-200
+    }
+}

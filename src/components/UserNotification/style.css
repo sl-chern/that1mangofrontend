@@ -1,0 +1,51 @@
+@tailwind components;
+
+@layer components {
+    .user-notification {
+        @apply flex flex-row p-2 rounded w-full border-2 border-dark-200 dark:border-light-300 mb-2 items-center
+    }
+
+    .user-notification__picture-block {
+        @apply w-[80px] relative h-[80px] rounded-sm overflow-hidden
+    }
+
+    .user-notification__picture {
+        @apply h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-sm
+    }
+
+    .user-notification__content {
+        @apply w-[calc(100%-88px)] flex h-full flex-row ml-2
+    }
+
+    .user-notification__text-content {
+        @apply flex flex-col w-full
+    }
+
+    .user-notification__notification-title-block {
+        @apply w-full flex flex-row items-center justify-between
+    }
+
+    .user-notification__notification-title {
+        @apply font-oswald font-medium text-lg dark:text-light-300 text-dark-200
+    }
+
+    .user-notification__notification-date {
+        @apply font-oswald text-sm text-dark-400 dark:text-light-400 mt-1
+    }
+
+    .user-notification__notification-text-block {
+        @apply mt-2 w-full flex flex-col
+    }
+
+    .user-notification__notification-text {
+        @apply font-roboto text-base dark:text-light-300 text-dark-200
+    }
+
+    .user-notification__buttons {
+        @apply flex flex-row
+    }
+
+    .user-notification__buttons-block {
+        @apply flex flex-col
+    }
+}

@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+    .chapter-upload__form {
+        @apply w-[80%] mx-auto mt-4 flex flex-col
+    }
+
+    .chapter-upload__form button {
+        @apply self-center mt-4
+    }
+
+    .chapter-upload__form .loaderBlock {
+        @apply self-center mt-4
+    }
+
+    .chapter-upload__chapter-number {
+        @apply flex flex-row justify-between
+    }
+
+    .chapter-upload__chapter-number-block {
+        @apply w-[48%]
+    }
+
+    .chapter-upload__chapter-settings {
+        @apply w-full flex flex-col justify-center mt-4 items-center
+    }
+
+    .chapter-upload__drag-and-drop-block {
+        @apply w-full rounded border-2 border-dashed border-dark-200 dark:border-light-300 h-20
+    }
+}

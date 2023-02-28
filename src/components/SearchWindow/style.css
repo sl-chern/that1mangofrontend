@@ -1,0 +1,12 @@
+@tailwind components;
+
+@layer components {
+    .searchContent {
+        @apply flex flex-col w-2/5 h-auto pb-10 bg-light-200 dark:bg-dark-200 
+        absolute rounded z-20 max-h-[80vh] mt-[90px]
+    }
+
+    .searchSpace {
+        @apply w-screen h-screen fixed top-0 left-0 flex justify-center
+    }
+}

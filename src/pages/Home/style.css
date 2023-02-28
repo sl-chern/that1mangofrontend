@@ -1,0 +1,55 @@
+@tailwind components;
+
+@layer components {
+    .home {
+        @apply w-full flex flex-row justify-between mt-4
+    }
+
+    .home__new-manga {
+        @apply w-2/3 flex flex-col
+    }
+
+    .home__new-titles-block {
+        @apply flex flex-col w-full
+    }
+
+    .home__new-titles-header-text {
+        @apply text-3xl font-openSans text-dark-200 dark:text-light-300 font-semibold 
+    }
+
+    .home__new-titles-titles {
+        @apply flex flex-row h-max w-full mt-3
+    }
+
+    .home__new-titles-titles .manga-title {
+        @apply w-full
+    }
+
+    .home__new-chapters-block {
+        @apply mt-4 flex flex-col
+    }
+
+    .home__new-chapters-header {
+        @apply w-full
+    }
+
+    .home__new-chapters-header-text {
+        @apply text-2xl font-openSans text-dark-200 dark:text-light-300 font-medium 
+    }
+
+    .home__new-chapters-content {
+        @apply mt-2 flex flex-col
+    }
+
+    .new-chapter__chapter-date {
+        @apply w-[150px]
+    }
+
+    .home__popular-titles {
+        @apply grow flex flex-col items-center ml-4
+    }
+
+    .home__popular-titles button {
+        @apply w-max
+    }
+}

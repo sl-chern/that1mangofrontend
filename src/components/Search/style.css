@@ -1,0 +1,47 @@
+@tailwind components;
+
+@layer components {
+    .search-block {
+        @apply flex flex-col w-[90%] mx-auto mt-4
+    }
+
+    .search-block__search-types {
+        @apply flex flex-row justify-between mb-2
+    }
+
+    .search-block__search-result {
+        @apply flex flex-col items-center
+    }
+    
+    .search-block__search-result button {
+        @apply w-max
+    }
+    
+    .search-block .spinnerBlock {
+        @apply mt-4
+    }
+
+    .search-block__search-result-text {
+        @apply font-openSans text-base text-dark-200 dark:text-light-300 mt-5
+    }
+
+    .search-block__search-result {
+        @apply grow flex overflow-y-scroll mt-4 max-h-[calc(80vh-260px)]
+    }
+
+    .search-block__search-result::-webkit-scrollbar {
+        @apply w-[4px]
+    }
+    
+    .search-block__search-result::-webkit-scrollbar-track {
+        @apply bg-light-200 dark:bg-dark-200
+    }
+    
+    .search-block__search-result::-webkit-scrollbar-thumb {
+        @apply rounded-[100vh] bg-dark-200 dark:bg-light-300
+    }
+    
+    .search-block__search-result::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-400 dark:bg-light-400
+    }
+}

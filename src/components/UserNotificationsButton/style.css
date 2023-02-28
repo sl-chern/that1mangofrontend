@@ -1,0 +1,8 @@
+@tailwind components;
+
+@layer components {
+    .user-notifications-button {
+        @apply p-[5px] rounded border-2 border-dark-200 dark:border-light-300
+        hover:cursor-pointer hover:bg-light-400 dark:hover:bg-dark-400 m-1
+    }
+}

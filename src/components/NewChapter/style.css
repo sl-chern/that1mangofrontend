@@ -1,0 +1,63 @@
+@tailwind components;
+
+@layer components {
+    .new-chapter {
+        @apply w-full rounded bg-light-300 dark:bg-dark-200 flex flex-row p-2 mb-1 h-[100px]
+    }
+
+    .new-chapter__poster-block {
+        @apply h-full rounded-sm overflow-hidden w-[60px] relative
+    }
+
+    .new-chapter__poster {
+        @apply w-full h-auto absolute top-[50%] -translate-y-[50%]
+    }
+
+    .new-chapter__info-block {
+        @apply flex flex-row ml-2 w-11/12 items-center
+    }
+
+    .new-chapter__chapter-info {
+        @apply flex flex-col w-3/5
+    }
+
+    .new-chapter__chapter-name {
+        @apply flex items-center relative overflow-hidden
+    }
+
+    .new-chapter__name {
+        @apply font-oswald font-medium text-base w-max whitespace-nowrap
+    }
+
+    .new-chapter__chapter-number {
+        @apply flex items-center relative overflow-hidden
+    }
+
+    .new-chapter__text {
+        @apply w-max whitespace-nowrap
+    }
+
+    .new-chapter__date {
+        @apply text-sm text-dark-400 dark:text-light-400 font-roboto
+    }
+
+    .new-chapter__team-info {
+        @apply flex flex-row items-center h-full p-2 ml-2
+    }
+
+    .new-chapter__poster-team-block {
+        @apply h-full rounded-sm overflow-hidden w-[45px] relative
+    }
+
+    .new-chapter__poster-team {
+        @apply h-auto w-full absolute top-[50%] -translate-y-[50%] rounded-sm overflow-hidden
+    }
+
+    .new-chapter__team-name-block {
+        @apply ml-4 
+    }
+
+    .new-chapter__dark-effect {
+        @apply absolute top-0 right-0 h-full w-5 bg-gradient-to-r from-transparent to-light-300 dark:to-dark-200
+    }
+}

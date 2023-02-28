@@ -1,0 +1,44 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .ratingButtonsBlock {
+        @apply w-[80%] flex flex-col mx-auto
+    }
+
+    .loginSpace {
+        @apply z-[60]
+    }
+
+    .rateButton {
+        @apply flex flex-row p-2 border-2 border-solid dark:border-light-300 border-dark-200 
+        rounded overflow-hidden items-center mt-3 hover:cursor-pointer
+        dark:hover:bg-dark-400 hover:bg-light-400
+    }
+
+    .ratingButtonRating {
+        @apply flex flex-row items-center
+    }
+
+    .ratingButtonRating p {
+        @apply ml-1 text-lg font-oswald text-dark-200 dark:text-light-300
+    }
+
+    .markTextBlock {
+        @apply flex items-center ml-3
+    }
+
+    .markText {
+        @apply text-lg font-oswald text-dark-200 dark:text-light-300
+    }
+}
+
+@layer utilities {
+    .activeRateBut {
+        @apply dark:bg-light-300 bg-dark-200 dark:hover:bg-light-300 hover:bg-dark-200 
+    }
+
+    .activeRateBut p {
+        @apply dark:text-dark-200 text-light-300
+    }
+}

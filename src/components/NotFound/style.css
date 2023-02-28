@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+    .not-found {
+        @apply w-full h-[calc(100vh-136px)] flex items-center justify-center relative
+    }
+
+    .not-found__text-block {
+        @apply flex flex-col
+    }
+
+    .not-found__text {
+        @apply font-oswald text-dark-200 dark:text-light-300 text-[31rem] leading-none opacity-80
+    }
+
+    .not-found__info-block {
+        @apply flex flex-row w-full justify-between
+    }
+
+    .unauth__info {
+        @apply text-dark-200 dark:text-light-300 font-openSans text-[3.5rem] font-semibold
+    }
+
+    .not-found__info {
+        @apply text-dark-200 dark:text-light-300 font-openSans text-[4rem] font-semibold
+    }
+
+    .forbidden__info {
+        @apply text-dark-200 dark:text-light-300 font-openSans text-[5rem] font-semibold
+    }
+}
