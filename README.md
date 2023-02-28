@@ -1,6 +1,6 @@
 ## This is a frontend repository for a course work university project
 
-This project is a website where users can read, rate manga, create personal lists of manga, create translators teams, upload translated chapters of manga.
+This project is a website where users can read, rate manga, create personal lists of manga, create translators teams, upload translated chapters of manga. Project was developed in a team where i was responsible for frontend.
 
 ## To set up and run project:
 1. Install packages
