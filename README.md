@@ -11,3 +11,6 @@ This project is a website where users can read, rate manga, create personal list
 
 ## To build the project for production:
   `npm run build`
+
+## Backend:
+[https://github.com/Dmytro-Leonov/that1mango](https://github.com/Dmytro-Leonov/that1mango)
